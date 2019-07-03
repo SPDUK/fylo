@@ -25,3 +25,38 @@ nav {
   }
   max-width: 1500px;
 }
+
+.email-input {
+  padding: 12px 20px;
+  font-size: 0.85em;
+  border: 1px solid $primary-alt;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 350px;
+  &::placeholder {
+    color: $neutral-alt;
+  }
+}
+
+.button-primary {
+  background: $accent;
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  color: $neutral;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.mw-350 {
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.shadow-sm {
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-md {
+  box-shadow: 3px 7px 8px rgba(0, 0, 0, 0.1);
+}
