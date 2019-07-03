@@ -14,3 +14,14 @@ h3,
 nav {
   font-family: 'Raleway', sans-serif;
 }
+
+.container {
+  padding: 20px 15px;
+  @media (min-width: 768px) {
+    padding: 20px 50px;
+  }
+  @media (min-width: 900px) {
+    padding: 20px 100px;
+  }
+  max-width: 1500px;
+}
