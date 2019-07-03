@@ -1,0 +1,16 @@
+$primary: hsl(243, 87%, 12%);
+$primary-alt: hsl(238, 22%, 44%);
+
+$accent: hsl(224, 93%, 58%);
+$accent-alt: hsl(170, 45%, 43%);
+
+$neutral: hsl(240, 75%, 98%);
+$neutral-alt: hsl(0, 0%, 75%);
+
+// Headings, CTA, header nav
+h1,
+h2,
+h3,
+nav {
+  font-family: 'Raleway', sans-serif;
+}
