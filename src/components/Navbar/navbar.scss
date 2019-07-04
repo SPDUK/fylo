@@ -1,6 +1,9 @@
+@import '../../styles/variables.scss';
+
 nav {
   display: flex;
   justify-content: space-between;
+  color: $primary;
   img {
     width: 60px;
     height: auto;
@@ -9,7 +12,9 @@ nav {
     ul {
       display: flex;
       li {
-        padding: 0 10px;
+        font-size: 0.8em;
+        padding: 0 1em;
+        cursor: pointer;
       }
     }
   }
