@@ -3,18 +3,22 @@ import './jumbotron.scss';
 import illustration from '../../images/illustration-1.svg';
 
 const jumbotron = () => (
-  <div className="jumbotron container">
+  <div className="container jumbotron">
     <img alt="fylo" src={illustration} />
-    <h2>All your files in one secure location, accessible anywhere.</h2>
-    <div className="mw-350">
-      <h4>
-        Fylo stores your most important files in one secure location. Access them wherever you need,
-        share and collaborate with friends, family, and co-workers.
-      </h4>
-      <input className="email-input shadow-sm" placeholder="Enter your email.." type="text" />
-      <button type="button" className="button-primary shadow-md">
-        Get Started
-      </button>
+    <div className="jumbotron-info">
+      <h2>All your files in one secure location, accessible anywhere.</h2>
+      <div className="mw-350-sm">
+        <h4>
+          Fylo stores your most important files in one secure location. Access them wherever you
+          need, share and collaborate with friends, family, and co-workers.
+        </h4>
+        <div className="jumbotron-actions">
+          <input className="email-input shadow-sm" placeholder="Enter your email.." type="text" />
+          <button type="button" className="button-primary shadow-md">
+            Get Started
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 );

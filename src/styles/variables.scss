@@ -16,6 +16,7 @@ nav {
 }
 
 .container {
+  margin: 0 auto;
   padding: 20px 15px;
   @media (min-width: 768px) {
     padding: 20px 50px;
@@ -27,30 +28,44 @@ nav {
 }
 
 .email-input {
+  transition: 0.2s ease-out;
   padding: 12px 20px;
-  font-size: 0.85em;
+  font-size: 0.8em;
   border: 1px solid $primary-alt;
   border-radius: 4px;
   width: 100%;
   max-width: 350px;
+  outline: none;
+  max-height: 40px;
   &::placeholder {
     color: $neutral-alt;
+  }
+  &:focus {
+    border: 1px solid $accent;
   }
 }
 
 .button-primary {
+  transition: 0.2s ease-out;
   background: $accent;
   width: 100%;
   padding: 12px;
   border-radius: 4px;
   color: $neutral;
   font-weight: 700;
-  font-size: 0.9em;
+  font-size: 0.8em;
+  max-height: 40px;
+  &:hover {
+    background: $accent-alt;
+  }
 }
 
-.mw-350 {
+.mw-350-sm {
   margin: 0 auto;
   max-width: 300px;
+  @media (min-width: 1200px) {
+    max-width: 100%;
+  }
 }
 
 .shadow-sm {

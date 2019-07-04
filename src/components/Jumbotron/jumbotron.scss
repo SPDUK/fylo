@@ -1,19 +1,59 @@
+@import '../../styles/variables.scss';
 .jumbotron {
-  margin-top: 80px;
   text-align: center;
 
   img {
+    padding-top: 80px;
     width: 100%;
   }
-  h2,
-  h4 {
-    margin: 30px 0px;
+  h2 {
+    color: $primary;
   }
   h4 {
     font-size: 14px;
     font-weight: 400;
   }
+  h2,
+  h4 {
+    margin: 30px 0px;
+  }
   input {
     margin-bottom: 20px;
+  }
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row-reverse;
+    img {
+      padding-top: 0;
+      width: 50%;
+    }
+    h2 {
+      font-size: 2.2em;
+    }
+    h4 {
+      font-size: 1em;
+    }
+    h2,
+    h4 {
+      text-align: left;
+      max-width: 100%;
+      margin: 20px 0;
+    }
+    &-info {
+      margin-top: 80px;
+      margin-right: auto;
+      max-width: 540px;
+    }
+    &-actions {
+      display: flex;
+      max-width: 480px;
+      input {
+        flex: 2;
+        margin-right: 15px;
+      }
+      button {
+        flex: 1.3;
+      }
+    }
   }
 }
