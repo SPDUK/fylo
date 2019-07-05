@@ -26,6 +26,7 @@ class Info extends Component {
     });
   };
 
+  /* eslint-disable */
   render() {
     const { width } = this.state;
     return (
@@ -58,5 +59,6 @@ class Info extends Component {
     );
   }
 }
+/* eslint-enable */
 
 export default Info;
