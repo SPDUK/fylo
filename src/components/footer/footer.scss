@@ -38,4 +38,11 @@
       padding: 10px;
     }
   }
+  @media (min-width: 1200px) {
+    &-links {
+      display: flex;
+      justify-content: space-between;
+      text-align: start;
+    }
+  }
 }

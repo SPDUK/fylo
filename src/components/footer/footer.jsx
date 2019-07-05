@@ -19,22 +19,24 @@ const footer = () => (
   <div className="footer-wrapper container">
     <footer className="footer">
       <img className="footer-logo" src={logo} alt="Fylo logo" />
-      <div className="footer-contact">
-        <div>
-          <img src={phoneIcon} alt="phone" />
-          Phone: +1-543-123-4567
+      <div className="footer-links">
+        <div className="footer-contact">
+          <div>
+            <img src={phoneIcon} alt="phone" />
+            Phone: +1-543-123-4567
+          </div>
+          <div>
+            <img src={emailIcon} alt="phone" />
+            example@fylo.com
+          </div>
         </div>
-        <div>
-          <img src={emailIcon} alt="phone" />
-          example@fylo.com
+        <div className="footer-navigation">{navLinks.map(createLink)}</div>
+        <div className="footer-contactlinks">{contactLinks.map(createLink)}</div>
+        <div className="footer-social">
+          <ion-icon name="logo-facebook" />
+          <ion-icon name="logo-twitter" />
+          <ion-icon name="logo-instagram" />
         </div>
-      </div>
-      <div className="footer-navigation">{navLinks.map(createLink)}</div>
-      <div className="footer-contactlinks">{contactLinks.map(createLink)}</div>
-      <div className="footer-social">
-        <ion-icon name="logo-facebook" />
-        <ion-icon name="logo-twitter" />
-        <ion-icon name="logo-instagram" />
       </div>
     </footer>
   </div>
