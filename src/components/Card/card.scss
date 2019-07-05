@@ -1,0 +1,53 @@
+@import '../../styles/variables.scss';
+.card {
+  background: #fff;
+  max-width: 320px;
+  padding: 20px 15px 20px 20px;
+  border-radius: 4px;
+  margin: 0 auto;
+  &-quote {
+    display: inline-block;
+    justify-content: flex-start;
+    width: 15px !important;
+    margin-bottom: 5px;
+  }
+  h4 {
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-bottom: 15px;
+    line-height: 1.9em;
+  }
+  &-testimonial {
+    display: flex;
+    &-image {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      img {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+    }
+    &-text {
+      h4 {
+        color: $primary;
+        margin-bottom: 0px;
+        font-weight: 800;
+        font-size: 0.8em;
+        max-height: 20px;
+      }
+      h5 {
+        font-weight: 400;
+        font-size: 0.55em;
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+  @media (min-width: 1200px) {
+    margin: 0;
+  }
+}

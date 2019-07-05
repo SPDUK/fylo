@@ -3,6 +3,8 @@ import './info.scss';
 import bgMobile from '../../images/bg-curve-mobile.svg';
 import bgDesktop from '../../images/bg-curve-desktop.svg';
 import illustrationTwo from '../../images/illustration-2.svg';
+import arrow from '../../images/icon-arrow.svg';
+import Card from '../Card/card';
 
 class Info extends Component {
   state = {
@@ -31,18 +33,25 @@ class Info extends Component {
         <img src={width > 768 ? bgDesktop : bgMobile} alt="background" width="100%" />
         <div className="info-bg">
           <div className="container">
-            <div className="info-text">
+            <div className="info-content">
               <img className="info-illustration" src={illustrationTwo} alt="pepople" />
-              <h3>Stay Productive, wherever you are</h3>
-              <h4>
-                Never let location be an issues when accessing your files. Fylo has you covered for
-                all of your file storage needs.
-              </h4>
-              <h4>
-                Securely share files and folders with friends, family and colleagues for live
-                collboration. No email attachments required!
-              </h4>
+              <div className="info-content-text">
+                <h3>Stay Productive, wherever you are</h3>
+                <h4>
+                  Never let location be an issues when accessing your files. Fylo has you covered
+                  for all of your file storage needs.
+                </h4>
+                <h4>
+                  Securely share files and folders with friends, family and colleagues for live
+                  collboration. No email attachments required!
+                </h4>
+                <a href="#">
+                  <span>See how Fylo works</span>
+                  <img src={arrow} alt="arrow" />
+                </a>
+              </div>
             </div>
+            <Card />
           </div>
         </div>
       </div>
