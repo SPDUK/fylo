@@ -4,12 +4,20 @@ import logo from '../../images/logo.svg';
 
 const navbar = () => (
   <nav className="container">
-    <img alt="fylo" src={logo} />
+    <a href="#">
+      <img alt="fylo" src={logo} />
+    </a>
     <aside>
       <ul>
-        <li>Features</li>
-        <li>Team</li>
-        <li>Sign In</li>
+        <li>
+          <a href="#">Features</a>
+        </li>
+        <li>
+          <a href="#">Team</a>
+        </li>
+        <li>
+          <a href="#">Sign In</a>
+        </li>
       </ul>
     </aside>
   </nav>
