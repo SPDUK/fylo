@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+.info {
+  margin-top: 80px;
+  img {
+    display: block;
+  }
+  h3 {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  h4 {
+    font-weight: 400;
+    color: $primary-alt;
+    font-size: 0.94em;
+    margin-bottom: 20px;
+  }
+  &-bg {
+    background-color: $neutral;
+    height: 600px;
+  }
+  &-illustration {
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
