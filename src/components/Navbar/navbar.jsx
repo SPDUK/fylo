@@ -2,6 +2,7 @@ import React from 'react';
 import './navbar.scss';
 import logo from '../../images/logo.svg';
 
+/* eslint-disable */
 const navbar = () => (
   <nav className="container">
     <a href="#">
@@ -23,4 +24,5 @@ const navbar = () => (
   </nav>
 );
 
+/* eslint-enable */
 export default navbar;
