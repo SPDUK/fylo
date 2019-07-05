@@ -1,0 +1,41 @@
+@import '../../styles/variables.scss';
+
+.footer {
+  padding: 30px 30px;
+  color: $neutral;
+  &-wrapper {
+    background: $primary;
+  }
+  &-logo {
+    filter: brightness(0) invert(1);
+  }
+  &-contact {
+    margin: 40px 0;
+    div {
+      margin: 20px 0;
+      img {
+        margin-right: 15px;
+      }
+    }
+  }
+  &-navigation,
+  &-contactlinks {
+    margin-bottom: 40px;
+    div {
+      margin: 15px 0;
+    }
+  }
+  &-social {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    ion-icon {
+      cursor: pointer;
+      font-size: 18px;
+      margin: 0 10px;
+      border: 1px solid $neutral;
+      border-radius: 50%;
+      padding: 10px;
+    }
+  }
+}
