@@ -1,4 +1,5 @@
 import React from 'react';
+
 import quote from '../../images/icon-quotes.svg';
 import avatar from '../../images/avatar-testimonial.jpg';
 import './card.scss';

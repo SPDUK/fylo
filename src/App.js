@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from './components/Navbar/navbar';
-import Jumbotron from './components/Jumbotron/jumbotron';
-import Info from './components/Info/info';
+import Navbar from './components/navbar/navbar';
+import Jumbotron from './components/jumbotron/jumbotron';
+import Info from './components/info/info';
 
 function App() {
   return (

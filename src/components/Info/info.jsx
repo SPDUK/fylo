@@ -4,7 +4,7 @@ import bgMobile from '../../images/bg-curve-mobile.svg';
 import bgDesktop from '../../images/bg-curve-desktop.svg';
 import illustrationTwo from '../../images/illustration-2.svg';
 import arrow from '../../images/icon-arrow.svg';
-import Card from '../Card/card';
+import Card from '../card/card';
 
 class Info extends Component {
   state = {
