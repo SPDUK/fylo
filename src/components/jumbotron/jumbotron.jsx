@@ -1,6 +1,7 @@
 import React from 'react';
 import './jumbotron.scss';
 import illustration from '../../images/illustration-1.svg';
+import handleSubmit from '../lib/handleSubmit';
 
 const jumbotron = () => (
   <div className="container jumbotron">
@@ -12,12 +13,17 @@ const jumbotron = () => (
           Fylo stores your most important files in one secure location. Access them wherever you
           need, share and collaborate with friends, family, and co-workers.
         </h4>
-        <div className="jumbotron-actions">
-          <input className="email-input shadow-sm" placeholder="Enter your email.." type="text" />
-          <button type="button" className="button-primary shadow-md">
+        <form onSubmit={handleSubmit} className="jumbotron-actions">
+          <input
+            aria-label="email"
+            className="email-input shadow-sm"
+            placeholder="Enter your email.."
+            type="text"
+          />
+          <button aria-label="button" type="submit" className="button-primary shadow-md">
             Get Started
           </button>
-        </div>
+        </form>
       </div>
     </div>
   </div>

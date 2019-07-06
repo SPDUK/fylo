@@ -1,4 +1,5 @@
 import React from 'react';
+import handleSubmit from '../lib/handleSubmit';
 import './early-access.scss';
 
 const earlyAccess = () => (
@@ -11,17 +12,23 @@ const earlyAccess = () => (
           have any questions, our support team would be happy to help you.
         </h4>
       </div>
-      <div className="earlyaccess-actions">
+      <form onSubmit={handleSubmit} className="earlyaccess-actions">
         <input
           id="earlyInput"
           className="email-input shadow-sm"
           placeholder="email@example.com"
           type="text"
+          aria-label="email"
         />
-        <button id="earlyBtn" type="button" className="button-primary shadow-md earlyaccess-button">
+        <button
+          aria-label="button"
+          id="earlyBtn"
+          type="submit"
+          className="button-primary shadow-md earlyaccess-button"
+        >
           Get Started For Free
         </button>
-      </div>
+      </form>
     </div>
   </div>
 );
