@@ -24,11 +24,11 @@ const footer = () => (
           <div className="footer-contact">
             <div>
               <img src={phoneIcon} alt="phone" />
-              Phone: +1-543-123-4567
+              <a href="tel:+15431234567">Phone: +1-543-123-4567</a>
             </div>
             <div>
               <img src={emailIcon} alt="phone" />
-              example@fylo.com
+              <a href="mailto:example@fylo.com">example@fylo.com</a>
             </div>
           </div>
           <div className="footer-navigation">{navLinks.map(createLink)}</div>
