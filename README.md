@@ -2,6 +2,8 @@
 
 **A responsive landing page prototype that follows the design guide for mobile and desktop layouts.**
 
+[Live Website](https://fylo-proto.netlify.com/)
+
 Created from scratch using React and SCSS (flexbox), using no frameworks or dependencies.
 
 You can compare the design to the real site, the designs are aimed at `375` width for mobile, and `1400` width for desktop.
@@ -12,11 +14,11 @@ You can compare the design to the real site, the designs are aimed at `375` widt
 
 
 
-# Desktop
+# Desktop Design
 ![desktop](design/desktop-design.jpg)
 
 
 
-# Mobile
+# Mobile Design
 
 ![mobile](design/mobile-design.jpg)
